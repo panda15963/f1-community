@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function HomePage() {
     return (
-        <div className="mx-auto max-w-7xl px-4 py-16">
-            <section className="py-20 text-center">
-                <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
+        <div className="flex min-h-full items-center justify-center px-4">
+            <section className="w-full max-w-7xl py-12 text-center">
+                <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
                     Formula 1 Community
                 </p>
 
@@ -14,12 +14,13 @@ export default function HomePage() {
                     팬들과 함께.
                 </h1>
 
-                <p className="mx-auto mt-6 max-w-2xl text-zinc-400">
+                <p className="mx-auto mt-5 max-w-2xl text-zinc-400">
                     F1 경기 데이터부터 드라이버와 팀 통계,
+                    <br className="md:hidden" />
                     예측과 커뮤니티까지 한곳에서 만나보세요.
                 </p>
 
-                <div className="mt-8 flex justify-center gap-3">
+                <div className="mt-7 flex justify-center gap-3">
                     <Link
                         href="/races"
                         className="rounded-md bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-200"
